@@ -16,7 +16,7 @@ Installation
 
     bash
 
-    git clone https://github.com/dein-benutzername/webshop.git
+    git clone https://github.com/EtherEngine/Webshop.git
 
     Navigiere in das Projektverzeichnis und kopiere die Dateien in das XAMPP-htdocs-Verzeichnis.
     Starte den Apache- und MySQL-Server über das XAMPP-Kontrollpanel.
