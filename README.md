@@ -1,61 +1,28 @@
-Webshop - Startseite
+Webshop - Ein vollständiges E-Commerce-Projekt
 
-Ein vollständiger Webshop mit PHP, MySQL, HTML, CSS und JavaScript. Das Projekt nutzt das MVC-Entwurfsmuster und beinhaltet eine benutzerfreundliche Oberfläche für die Verwaltung von Produkten und Benutzern.
-Inhaltsverzeichnis
+Dieses Projekt ist ein vollständiger Webshop, der mit PHP, MySQL, HTML, CSS und JavaScript entwickelt wurde. Es verwendet das MVC-Entwurfsmuster und bietet eine benutzerfreundliche Oberfläche für die Verwaltung von Produkten und Benutzern.
+Features
+
+    Produktanzeige: Produkte mit Bildern, Beschreibungen und Preisen werden angezeigt.
+    Suchfunktion: Eine Suchleiste ermöglicht das schnelle Finden von Produkten.
+    Warenkorb: Benutzer können Produkte zum Warenkorb hinzufügen, die Menge ändern und Produkte entfernen.
+    Benutzerverwaltung: Benutzer können sich registrieren, anmelden und ihr Profil verwalten.
+    Admin-Bereich: Administratoren können Produkte und Benutzer verwalten.
+    Zahlungsintegration: Unterstützung für PayPal, Kreditkarte und Banküberweisung.
 
 Installation
 
-    Voraussetzungen:
-        XAMPP oder ein ähnlicher Webserver mit PHP und MySQL
-        Webbrowser
+    Klone das Repository:
 
-    Schritte:
-        Klone das Repository:
+    bash
 
-        git clone https://github.com/dein-benutzername/webshop.git
+    git clone https://github.com/dein-benutzername/webshop.git
 
-
-
-        cd webshop
-
-        Kopiere die Projektdateien in das XAMPP-htdocs-Verzeichnis (oder ein ähnliches Verzeichnis deines Webservers).
-        Starte den Apache- und MySQL-Server über das XAMPP-Kontrollpanel.
-        Erstelle eine Datenbank in phpMyAdmin und importiere die db_schema.sql Datei, um die benötigten Tabellen und Daten zu erstellen.
-        Konfiguriere die Datenbankverbindung in config/db_connect.php.
+    Navigiere in das Projektverzeichnis und kopiere die Dateien in das XAMPP-htdocs-Verzeichnis.
+    Starte den Apache- und MySQL-Server über das XAMPP-Kontrollpanel.
+    Erstelle eine Datenbank in phpMyAdmin und importiere die db_schema.sql Datei.
+    Konfiguriere die Datenbankverbindung in config/db_connect.php.
 
 Verwendung
 
-    Webshop Startseite:
-        Öffne deinen Webbrowser und navigiere zu http://localhost/webshop/public/index.php.
-
-    Benutzerregistrierung:
-        Klicke auf "Registrieren" und fülle das Formular aus, um ein neues Benutzerkonto zu erstellen.
-
-    Produkte durchsuchen:
-        Verwende die Suchleiste auf der Startseite, um nach Produkten zu suchen.
-        Klicke auf ein Produktbild, um die Produktdetails anzuzeigen.
-
-    Produkte zum Warenkorb hinzufügen:
-        Klicke auf das Plus-Symbol (+) auf einem Produkt, um es deinem Warenkorb hinzuzufügen.
-        Verwende das Popup-Fenster, um die Anzahl der Produkte anzugeben.
-
-    Warenkorb anzeigen und bearbeiten:
-        Klicke auf das Warenkorb-Symbol in der Navigation, um deinen Warenkorb anzuzeigen.
-        Ändere die Produktmengen oder entferne Produkte aus dem Warenkorb.
-
-    Checkout:
-        Klicke auf "Zur Kasse", um zur Zahlungsseite zu gelangen.
-        Wähle eine Zahlungsmethode aus und folge den Anweisungen zur Zahlung.
-
-
-
-    PHP
-    MySQL
-    HTML
-    CSS (Bootstrap)
-    JavaScript (jQuery)
-    FontAwesome
-
-Autoren
-
-    Alexander Fleischmann
+Öffne deinen Webbrowser und navigiere zu http://localhost/webshop/public/index.php, um den Webshop zu nutzen.
