@@ -13,7 +13,7 @@
 
 ## 1. Einführung
 
-Dieses Projekt ist ein einfacher Webshop in PHP und MySQL. Das Projekt enthält grundlegende Funktionen wie Produktanzeige, Suche, Warenkorb und Benutzerverwaltung.
+Dieses Projekt ist ein einfacher Webshop in PHP und MySQL. Das Projekt ist ein Klausurprojekt.
 
 ## 2. Features
 
