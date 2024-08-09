@@ -2,7 +2,6 @@
 
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D7.4-blue)](https://www.php.net/releases/7_4_0.php)
 [![MySQL](https://img.shields.io/badge/mysql-%3E%3D5.7-orange)](https://dev.mysql.com/downloads/mysql/5.7.html)
-[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/EtherEngine/Webshop/blob/main/LICENSE)
 
 ## 📖 Inhaltsverzeichnis
 1. [Einführung](#1-einführung)
@@ -14,7 +13,7 @@
 
 ## 1. Einführung
 
-Dieses Projekt ist ein Beispiel für einen einfachen Webshop. Es zeigt, wie man mit PHP und MySQL eine E-Commerce-Website erstellen kann. Das Projekt enthält grundlegende Funktionen wie Produktanzeige, Suche, Warenkorb und Benutzerverwaltung.
+Dieses Projekt ist ein einfacher Webshop in PHP und MySQL. Das Projekt enthält grundlegende Funktionen wie Produktanzeige, Suche, Warenkorb und Benutzerverwaltung.
 
 ## 2. Features
 
@@ -37,13 +36,13 @@ Dieses Projekt ist ein Beispiel für einen einfachen Webshop. Es zeigt, wie man 
 
 1. **Repository klonen:**
 
-    ```sh
+    ```
     git clone https://github.com/EtherEngine/Webshop.git
     ```
 
 2. **In das Projektverzeichnis wechseln:**
 
-    ```sh
+    ```
     cd path/to/your/webshop
     ```
 
@@ -59,7 +58,7 @@ Dieses Projekt ist ein Beispiel für einen einfachen Webshop. Es zeigt, wie man 
 
         **Kommandozeile:**
 
-        ```sh
+        ```
         mysql -u [username] -p webshop < db_schema.sql
         ```
 
