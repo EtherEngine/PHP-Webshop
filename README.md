@@ -1,117 +1,122 @@
-Webshop
+# 🛒 Klausurprojekt Webshop
 
-Projektbeschreibung
+[![PHP Version](https://img.shields.io/badge/php-%3E%3D7.4-blue)](https://www.php.net/releases/7_4_0.php)
+[![MySQL](https://img.shields.io/badge/mysql-%3E%3D5.7-orange)](https://dev.mysql.com/downloads/mysql/5.7.html)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/EtherEngine/Webshop/blob/main/LICENSE)
 
-Ein einfacher Webshop mit PHP, MySQL, HTML, CSS und JavaScript. Das Projekt nutzt das MVC-Entwurfsmuster und beinhaltet eine benutzerfreundliche Oberfläche für die Verwaltung von Produkten und Benutzern.
-Inhaltsverzeichnis:
+## 📖 Inhaltsverzeichnis
+1. [Einführung](#1-einführung)
+2. [Features](#2-features)
+3. [Installation](#3-installation)
+4. [Verwendung](#4-verwendung)
+5. [Technologien](#5-technologien)
+6. [Autoren](#6-autoren)
 
-    1.Einführung
-    2.Features
-    3.Installation
-    4.Verwendung
-    5.Technologien
-    6.Autoren
+## 1. Einführung
 
-1. Einführung
+Dieses Projekt ist ein Beispiel für einen einfachen Webshop. Es zeigt, wie man mit PHP und MySQL eine E-Commerce-Website erstellen kann. Das Projekt enthält grundlegende Funktionen wie Produktanzeige, Suche, Warenkorb und Benutzerverwaltung.
 
-Dieses Projekt ist ein Beispiel für einen einfachen Webshop. Es zeigt, wie man mit PHP und MySQL eine E-Commerce-Website erstellen kann. Das Projekt enthält grundlegende Funktionen wie Produktanzeige, Suche, Warenkorb und Benutzerverwaltung. 2. Features
+## 2. Features
 
-    Produktanzeige mit Bildern und Beschreibungen
-    Suchfunktion für Produkte
-    Warenkorb mit der Möglichkeit, Produkte hinzuzufügen und zu entfernen
-    Benutzerregistrierung und -anmeldung
-    Benutzerprofilseite
-    Admin-Bereich zur Verwaltung von Produkten und Benutzern
-    Zahlungssystemintegration (PayPal, Kreditkarte, Banküberweisung)
+- 🖼️ **Produktanzeige** mit Bildern und Beschreibungen
+- 🔍 **Suchfunktion** für Produkte
+- 🛒 **Warenkorb** mit der Möglichkeit, Produkte hinzuzufügen und zu entfernen
+- 👤 **Benutzerregistrierung und -anmeldung**
+- 🛠️ **Benutzerprofilseite**
+- 🔐 **Admin-Bereich** zur Verwaltung von Produkten und Benutzern
+- 💳 **Zahlungssystemintegration** (PayPal, Kreditkarte, Banküberweisung)
 
-3.  Installation
-    Voraussetzungen:
+## 3. Installation
 
-        XAMPP oder ein ähnlicher Webserver mit PHP und MySQL
-        Webbrowser
+### Voraussetzungen:
 
-Schritte:
+- XAMPP oder ein ähnlicher Webserver mit PHP und MySQL
+- Webbrowser
 
-    Repository klonen:
+### Schritte:
 
-    sh
+1. **Repository klonen:**
 
+    ```sh
     git clone https://github.com/EtherEngine/Webshop.git
+    ```
 
-In das Projektverzeichnis wechseln:
+2. **In das Projektverzeichnis wechseln:**
 
-    sh
-
+    ```sh
     cd path/to/your/webshop
+    ```
 
-Projektdateien in das XAMPP-htdocs-Verzeichnis (oder ein ähnliches Verzeichnis deines Webservers) kopieren.
+3. **Projektdateien in das XAMPP-htdocs-Verzeichnis kopieren.**
 
-Apache- und MySQL-Server über das XAMPP-Kontrollpanel starten.
+4. **Apache- und MySQL-Server über das XAMPP-Kontrollpanel starten.**
 
-Datenbank erstellen und Schema importieren:
+5. **Datenbank erstellen und Schema importieren:**
 
-    Öffne phpMyAdmin.
-    Erstelle eine neue Datenbank namens webshop.
-    Importiere die mitgelieferte SQL-Datei db_schema.sql, um die benötigten Tabellen und Daten zu erstellen:
-        Kommandozeile:
+    - Öffne phpMyAdmin.
+    - Erstelle eine neue Datenbank namens `webshop`.
+    - Importiere die mitgelieferte SQL-Datei `db_schema.sql`, um die benötigten Tabellen und Daten zu erstellen:
 
-        sh
+        **Kommandozeile:**
 
+        ```sh
         mysql -u [username] -p webshop < db_schema.sql
+        ```
 
-        phpMyAdmin:
-            Wähle die neu erstellte webshop-Datenbank aus.
-            Navigiere zum Tab "Import" und lade die db_schema.sql-Datei hoch.
+        **phpMyAdmin:**
+        
+        - Wähle die neu erstellte `webshop`-Datenbank aus.
+        - Navigiere zum Tab "Import" und lade die `db_schema.sql`-Datei hoch.
 
-Datenbankverbindung konfigurieren:
+6. **Datenbankverbindung konfigurieren:**
 
-    Bearbeite die Datei config/db_connect.php und passe die Datenbankzugangsdaten an:
+    Bearbeite die Datei `config/db_connect.php` und passe die Datenbankzugangsdaten an:
 
-    php
+    ```php
+    <?php
+    try {
+        $pdo = new PDO('mysql:host=localhost;dbname=webshop', 'root', '');
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    } catch (PDOException $e) {
+        die('Verbindung zur Datenbank fehlgeschlagen: ' . $e->getMessage());
+    }
+    ?>
+    ```
 
-        <?php
-        try {
-            $pdo = new PDO('mysql:host=localhost;dbname=webshop', 'root', '');
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-        } catch (PDOException $e) {
-            die('Verbindung zur Datenbank fehlgeschlagen: ' . $e->getMessage());
-        }
-        ?>
+## 4. Verwendung
 
-4. Verwendung
+- **Webshop Startseite:**  
+  Öffne deinen Webbrowser und navigiere zu `http://localhost/webshop/public/index.php`.
 
-   Webshop Startseite:
-   Öffne deinen Webbrowser und navigiere zu http://localhost/webshop/public/index.php.
+- **Benutzerregistrierung:**  
+  Klicke auf "Registrieren" und fülle das Formular aus, um ein neues Benutzerkonto zu erstellen.
 
-   Benutzerregistrierung:
-   Klicke auf "Registrieren" und fülle das Formular aus, um ein neues Benutzerkonto zu erstellen.
+- **Produkte durchsuchen:**  
+  Verwende die Suchleiste auf der Startseite, um nach Produkten zu suchen. Klicke auf ein Produktbild, um die Produktdetails anzuzeigen.
 
-   Produkte durchsuchen:
-   Verwende die Suchleiste auf der Startseite, um nach Produkten zu suchen.
-   Klicke auf ein Produktbild, um die Produktdetails anzuzeigen.
+- **Produkte zum Warenkorb hinzufügen:**  
+  Klicke auf das Plus-Symbol (+) auf einem Produkt, um es deinem Warenkorb hinzuzufügen. Verwende das Popup-Fenster, um die Anzahl der Produkte anzugeben.
 
-   Produkte zum Warenkorb hinzufügen:
-   Klicke auf das Plus-Symbol (+) auf einem Produkt, um es deinem Warenkorb hinzuzufügen.
-   Verwende das Popup-Fenster, um die Anzahl der Produkte anzugeben.
+- **Warenkorb anzeigen und bearbeiten:**  
+  Klicke auf das Warenkorb-Symbol in der Navigation, um deinen Warenkorb anzuzeigen. Ändere die Produktmengen oder entferne Produkte aus dem Warenkorb.
 
-   Warenkorb anzeigen und bearbeiten:
-   Klicke auf das Warenkorb-Symbol in der Navigation, um deinen Warenkorb anzuzeigen.
-   Ändere die Produktmengen oder entferne Produkte aus dem Warenkorb.
+- **Checkout:**  
+  Klicke auf "Zur Kasse", um zur Zahlungsseite zu gelangen. Wähle eine Zahlungsmethode aus und folge den Anweisungen zur Zahlung.
 
-   Checkout:
-   Klicke auf "Zur Kasse", um zur Zahlungsseite zu gelangen.
-   Wähle eine Zahlungsmethode aus und folge den Anweisungen zur Zahlung.
+## 5. Technologien
 
-5. Technologien
+- 🐘 **PHP**
+- 🐬 **MySQL**
+- 🌐 **HTML**
+- 🎨 **CSS (Bootstrap)**
+- ⚡ **JavaScript (jQuery)**
+- 🌟 **FontAwesome**
 
-   PHP
-   MySQL
-   HTML
-   CSS (Bootstrap)
-   JavaScript (jQuery)
-   FontAwesome
+## 6. Autoren
 
-6. Autoren
+- **Alex F.** - [GitHub](https://github.com/EtherEngine)
 
-   Alex F.
+---
+
+
