@@ -1,0 +1,37 @@
+Erfahrungen:
+
+Während der Entwicklung dieses Webshop-Projekts habe ich wertvolle Erfahrungen in verschiedenen Bereichen gesammelt. 
+Die Arbeit mit PHP und MySQL zur Implementierung des Backend-Systems hat mein Verständnis für serverseitige Programmierung und 
+Datenbankverwaltung vertieft. Der Einsatz des MVC-Entwurfsmusters hat mir geholfen, den Code strukturiert und wartbar zu gestalten.
+
+Erfolge:
+
+Ein bedeutender Erfolg dieses Projekts war die erfolgreiche Integration aller wesentlichen Funktionen eines Webshops, einschließlich 
+Benutzerregistrierung, Produktsuche, Warenkorbfunktionalität und Zahlungsintegration. Besonders stolz bin ich auf die Benutzerfreundlichkeit 
+der Oberfläche und die konsistente visuelle Gestaltung durch den Einsatz von Bootstrap. Zudem konnte ich durch die Implementierung von AJAX 
+für die Warenkorbfunktionen eine reibungslose Benutzererfahrung ohne ständige Seitenaktualisierungen erreichen.
+
+Misserfolge:
+
+Trotz der zahlreichen Erfolge gab es auch einige Herausforderungen und Rückschläge. Ein häufiger Stolperstein war die Sicherstellung der 
+Datenbankverbindungen und die Vermeidung von SQL-Injection durch die Verwendung vorbereiteter Statements. Darüber hinaus stellte die Gestaltung
+einer reibungslosen und intuitiven Benutzererfahrung einige Schwierigkeiten dar, insbesondere bei der Implementierung der Popup-Fenster für die
+Mengenangabe im Warenkorb. Diese Herausforderungen boten jedoch auch Lernmöglichkeiten und halfen mir, meine Fähigkeiten weiter zu verbessern.
+
+Zukunft:
+
+In der Zukunft ist geplant, das Produktsortiment im oberen Bodybereich weiter auszubauen und vielfältigere Varianten anzubieten. Außerdem 
+soll eine erweiterte Sortierfunktion implementiert werden, die es ermöglicht, die Produkte nach Kriterien wie Sorte, Einstelldatum oder
+Preis zu ordnen. Diese Funktion wird über ein benutzerfreundliches Dropdown-Menü gesteuert, um eine noch intuitivere Navigation zu 
+gewährleisten. Der Code soll durch ein Autoloader skalier- und wartbarer gemacht werden. Der Webshop soll in zu Zukunft Mehrsprachig
+nutzbar sein.
+
+Zusammenfassung:
+
+Insgesamt war das Projekt eine bereichernde Erfahrung, die meine Fähigkeiten in der Webentwicklung erheblich erweitert hat. 
+Die Erfolge überwiegen die Misserfolge deutlich, und die dabei gewonnenen Erkenntnisse werden mir in zukünftigen Projekten von großem Nutzen 
+sein. Es gibt noch zahlreiche Bugs, die bearbeitet werden müssen. Ich freue mich darauf, das Projekt weiter zu verbessern und neue Funktionen
+hinzuzufügen.
+
+
+
