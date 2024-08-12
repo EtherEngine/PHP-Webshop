@@ -54,12 +54,12 @@ Dieses Projekt ist ein einfacher Webshop in PHP und MySQL. Das Projekt ist ein K
 
     - Öffne phpMyAdmin.
     - Erstelle eine neue Datenbank namens `webshop`.
-    - Importiere die mitgelieferte SQL-Datei `webshop.sql`, um die benötigten Tabellen und Daten zu erstellen:
+    - Importiere die mitgelieferte SQL-Datei `db.sql`, um die benötigten Tabellen und Daten zu erstellen:
 
         **Kommandozeile:**
 
         ```
-        mysql -u [username] -p webshop < webshop.sql
+        mysql -u [username] -p webshop < db.sql
         ```
 
         **phpMyAdmin:**
