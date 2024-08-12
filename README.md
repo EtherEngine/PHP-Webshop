@@ -56,32 +56,10 @@ Dieses Projekt ist ein einfacher Webshop in PHP und MySQL. Das Projekt ist ein K
     - Erstelle eine neue Datenbank namens `webshop`.
     - Importiere die mitgelieferte SQL-Datei `db.sql`, um die benötigten Tabellen und Daten zu erstellen:
 
-        **Kommandozeile:**
-
-        ```
-        mysql -u [username] -p webshop < db.sql
-        ```
-
-        **phpMyAdmin:**
         
         - Wähle die neu erstellte `webshop`-Datenbank aus.
         - Navigiere zum Tab "Import" und lade die `webshop.sql`-Datei hoch.
 
-6. **Datenbankverbindung konfigurieren:**
-
-    Bearbeite die Datei `config/db_connect.php` und passe die Datenbankzugangsdaten an:
-
-    ```php
-    <?php
-    try {
-        $pdo = new PDO('mysql:host=localhost;dbname=webshop', 'root', '');
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-    } catch (PDOException $e) {
-        die('Verbindung zur Datenbank fehlgeschlagen: ' . $e->getMessage());
-    }
-    ?>
-    ```
 
 ## 4. Verwendung
 
