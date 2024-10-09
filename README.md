@@ -3,9 +3,9 @@
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D7.4-blue)](https://www.php.net/releases/7_4_0.php)
 [![MySQL](https://img.shields.io/badge/mysql-%3E%3D5.7-orange)](https://dev.mysql.com/downloads/mysql/5.7.html)
 
-![Webshop](images/webshop_1.jpg)
-![Card](images/webshop_2.jpg)
-![Booking](images/webshop_3.jpg)
+![Webshop](images/webshop_1.JPG)
+![Card](images/webshop_2.JPG)
+![Booking](images/webshop_3.JPG)
 
 
 ## 📖 Inhaltsverzeichnis
