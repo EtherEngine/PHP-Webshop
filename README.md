@@ -5,7 +5,7 @@
 
 ![Webshop](images/webshop_1.JPG)
 ![Card](images/webshop_2.JPG)
-![Booking](images/webshop_3.JPG)
+![Booking](images/weshop_3.JPG)
 
 
 ## 📖 Inhaltsverzeichnis
