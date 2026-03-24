@@ -18,7 +18,7 @@
 
 ## 1. Einführung
 
-Dieses Projekt ist ein einfacher Webshop in PHP und MySQL.
+Dieses Projekt ist ein Webshop in PHP und MySQL.
 
 ## 2. Features
 
